@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+   <!--<link rel="stylesheet" href="/css/normalize.css">--> 
+   <link rel="stylesheet" href="css/styles.css">
+   <title>Mercado Liebre Register</title>
+    
+    
+    
+    
+    <title>Registrarse</title>
+</head>
+<body >
+    <div >
+        <h3 class="register-centrar-h3">Formulario de Registro</h3>
+         <form class= "register-flex-form" action="login" method="post" id="register" name="register">
+             <div >
+                 <input class="register-input-form-box" type="text" name="name" id="name" placeholder="Nombre y Apellido" required maxlength="10" required/>
+             </div>
+
+             <div  >
+                <input class="register-input-form-box" type="text" name="username" id="username" placeholder="Nombre de usuario"/>
+            </div>
+        
+            <label  for="creat_at"> 
+                <div class="register-label-title">Fecha de nacimiento: </div>
+                <div>   
+                    <input class="register-input-form-box" type="date" name="create_at" id="create_at"/>
+                </div>    
+            </label>
+
+            <div>
+                 <input class="register-input-form-box" type="text" name="address" id="address" placeholder="ingrese su dirección"/>
+            </div>
+
+                <label for="perfil"> 
+                    <div class="register-label-title" >Perfil del usario </div>
+                    <div class="register-margin-select">
+                         <input type="radio" name="perfil" value="comprador"  id="perfil"/>Comprador
+                        <input type="radio" name="perfil" value="vendedor" id="perfil"/>Vendedor
+                    </div>
+                </label>
+
+            </label>
+
+            <label for="category">
+                <div class="register-label-title">Intereses </div>
+                
+                <input class="register-margin-select" type="checkbox" name="category" value="electro" id="category"/>Electro <br>
+                <input class="register-margin-select" type="checkbox" name="category" value="moda" id="category"/>Moda <br>
+                <input class="register-margin-select" type="checkbox" name="category" value="hogar" id="category"/>Hogar <br>
+                <input class="register-margin-select" type="checkbox" name="category" value="juguetería" id="category"/>Juguetería <br>
+                <input class="register-margin-select" type="checkbox" name="category" value="vida" id="category"/>Vida Sana <br>
+
+             </label>
+            <label for="imguser">
+                <div class="register-label-title">Ingrese una imagen </div>
+                 <input class="register-input-form-box" type="file" name="imguser" accept="image/*" id="imguser"/>
+            </label>
+
+             <div>
+                    <input class="register-input-form-box" type="password" name="password"  id="password" placeholder="Contraseña min 8 caract" minlength="8"/>
+            </div>
+
+            <div>
+                <input class="register-input-form-box" type="password" name="passwordConf"  id="passwordConf" placeholder="Conf contraseña min 8 caract" minlength="8"/>
+            </div>  
+            <div  class="register-flex-butom">
+                 <input class="register-butom" type="submit" value="submit"/>
+                  <input class="register-butom" type="reset" form="register"/>
+            </div>
+
+
+        </form>
+    </div>
+</body>
+</html>
