@@ -1,0 +1,14 @@
+{
+  "name": "mercado-liebre",
+  "version": "1.0.0",
+  "description": "mi practica de express, html y css",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Isolina Durand",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
